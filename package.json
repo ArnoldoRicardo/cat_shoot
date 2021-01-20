@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx webpack --mode production",
+    "lint": "eslint",
+    "vercel-build": "npm run build",
+    "build": "webpack --mode production",
     "dev": "webpack serve --mode development"
   },
   "repository": {
@@ -35,6 +37,7 @@
   },
   "dependencies": {
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1"
   }
 }
